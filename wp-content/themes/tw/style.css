@@ -25,6 +25,10 @@
     max-width: 1600px;
     width: 100%;
 }
+.site-title, .site-description{
+    color: navajowhite;
+}
+.home .entry-title{color: navajowhite;}
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -35,7 +39,7 @@
     width: 100%;
     position: fixed;
     top: 30px;
-       text-align: right;
+    text-align: right;
 }
 ul.nav-menu, div.nav-menu > ul {
      margin: 0;
@@ -44,7 +48,7 @@ ul.nav-menu, div.nav-menu > ul {
 .nav-menu li a{ color: #bc360a; }
 
 .nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a{
-    color: #ffffff;
+    color: navajowhite;
 }
 /* =Poststyling
 -------------------------------------------------------------- */
@@ -60,9 +64,11 @@ ul.nav-menu, div.nav-menu > ul {
     padding: 40px 0;
     margin: 40px 0;
 }
+.entry-meta .date{display: none;}
 /* =Postformats
 -------------------------------------------------------------- */
-/*.format-gallery{background: transparent;}*/
+.format-standard .entry-title, .format-quote .entry-title{color: navajowhite;}
+.format-standard .entry-content, .format-quote .entry-content{color: navajowhite; text-shadow: 1px 1px 1px #676767;}
 /* =Footer
 -------------------------------------------------------------- */
 .site-footer{background: transparent;}
