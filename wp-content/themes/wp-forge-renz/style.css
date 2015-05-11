@@ -1,0 +1,364 @@
+                                   /*
+Theme Name: WP-Forge-Child for Schotter Renz
+Theme URI: http://wpstarter.themeawesome.com/
+Description: A child theme for WP-Forge
+Author: Thomas E. Vasquez
+Author URI: http://themeawesome.com/
+Template: wp-forge
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: wpstarter
+*/
+
+@import url("../wp-forge/style.css");
+
+/*
+maincolors{
+red:   #942929
+blue:  #0029A5
+}
+*/
+
+/* =Theme customization starts here
+----------------------------------------------- */
+a{color: #0029A5;}
+body{    }
+body.home{background-image:none!important;    }
+.off-canvas-wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* animated scroll header
+header#header {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+
+}*/
+header .header-logo {
+    display: inline-block;
+    height: 124px;
+    /* line-height: 124px; */
+    float: left;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header .header-logo img{height: 100%;}
+header.smaller {
+    height: 75px; }
+header.smaller .header-logo {
+    width: 150px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px; }
+/*header.smaller nav a {
+    line-height: 75px; }
+*/
+
+#background{
+/*    background: url("/wp-content/uploads/sites/4/2014/06/bgimg-1.png");
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    *//* overflow: hidden; *//*
+    z-index: 0;
+    width: 100%;
+    height: 333px;
+    max-width: 1280px;
+    margin: 0 auto;*/
+}
+#wrapper {
+    z-index: 1;
+    background: none;
+    box-shadow: none;
+    padding: 0 20px;
+
+/*
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 64rem;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+    padding: 1.5625rem 0.625rem 0;*/
+
+}
+div#container{
+    padding: 20px;
+}
+
+section.container{background: white; position: relative; box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+    padding: 33px 20px;}
+/*  home    */
+.home header[role=banner]{height: 277px; margin-top: 51px;}
+#orbitslider-home{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    height: 400px;
+    overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+.orbit-container{max-height: 400px;}
+/*  nav   */
+/*.contain-to-grid, .contain-to-grid .top-bar{background: none;}*/
+.top-bar{
+    display: none;
+    background: none!important; /* this gets overwritten by theme customiser  */
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.top-bar-section li:not(.has-form) a:not(.button){
+    background: whitesmoke;
+    height: 77px;
+    border-bottom: 5px solid #0029A5;
+    color: #0029A5;
+}
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]{
+    border-right: solid 1px rgb(214, 211, 211);
+    clear: none;
+    height: 63px;
+    width: 0;
+/* opacity: 0;*/
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 15px;
+    line-height: 45px;
+    color: #942929;
+    background: #fff;
+    border-bottom: 5px solid #942929;
+}
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+border-bottom: none;
+border-top: none;
+border-right: solid 1px rgb(230, 227, 227);
+clear: none;
+height: 72px;
+width: 0;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    background: #FFF;
+}
+/* disable main nav dropdown   */
+@media only screen and (min-width: 40.063em){
+    .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+        display: none;
+       /* position: static !important;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        clip: auto;
+        position: absolute !important;*/
+    }
+}
+.top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+    color: white;
+    background: #272727;
+    height: 55px;
+    border-bottom: 0;
+}
+/**
+*       sidebar
+*/
+.sidebar-product-nav h6.widget-title{
+    font-size: 2.75em;
+}
+
+.sidebar-product-nav{
+    margin-top: 80px;
+}
+/*.sidebar_container{position: relative; }*/
+
+.template-front-page .widget-area{
+    clear: both;
+    float: left;
+    width: auto;
+    padding-top: 1.5rem;
+    border-top: none;
+}
+.frontpage-3cols img{max-height:250px;width: 100%;}
+#secondary{
+    padding: 0;
+}
+.widget-area .widget ul {
+    margin-left:0;
+}
+ul.menu-widget, ul.menu-widget ul {
+    margin-left: 0;
+    list-style-type: none;
+}
+.menu-widget ul.sub-menu li:before{
+    content: "\f460";
+    /* content: "\f147"; content: "-";*/
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 9px/1 'dashicons';
+    color: rgb(66, 94, 179);
+    margin-right: 2px;
+    word-wrap: break-word;
+    padding: 0;
+    /* background: red; */
+    vertical-align: baseline;
+    line-height: 1.5em;
+}
+ .menu-widget ul.sub-menu li.current-product-parent, #secondary .menu-widget ul.sub-menu li.active{
+    background: whitesmoke;
+    border-right: 3px solid #942929;
+}
+.menu-widget li.cmw-level-1 > a{text-transform: uppercase; color: #393939!important;
+}
+/**
+*       #secondary-sidebar
+*/
+#secondary-sidebar {background: ghostwhite;}
+
+
+
+/*
+    woocommerce shop pages
+*/
+
+.woocommerce-page nav.woocommerce-breadcrumb{margin: 0 0 3em;}
+.woocommerce-page h1.page-title{
+    font-size: 1.5rem;
+    line-height: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #636363;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2em;
+}
+/**
+    product cat page accordion
+**/
+.woocommerce-page div.product div.images div.thumbnails{
+    max-height: 80px;
+    padding-top: 0!important;
+    margin: 0;
+    overflow: hidden;
+}
+
+.woocommerce-page ul#accordion_slider.products  li.product h3{
+  /*  transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: relative;
+    left: 0;
+    bottom: 20px;
+    font-weight: 700;
+    font-size: 1.5em;
+    bottom: 33px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255,0.5);*/
+}
+.woocommerce-page ul#accordion_slider.products li.product img,
+.woocommerce-page ul#accordion_slider.products  li.product h3{
+    max-height: 400px;
+    /*width: auto;*/
+}
+
+.woocommerce-page ul#accordion_slider.products li.product a{
+
+}
+
+.woocommerce-page .product .woocommerce-tabs ul.tabs,
+.woocommerce-page .product .woocommerce-tabs .panel h2,
+.woocommerce-page ul.products li.product mark.count,
+.woocommerce-page div.product div.entry-summary div.product_meta,
+.woocommerce-page #content .woocommerce-result-count,
+.woocommerce-page #content .woocommerce-ordering
+
+{display: none;}
+
+.woocommerce-page #content ul.products li.product h3{position: absolute;
+background: rgba(250,250,250,0.7);
+bottom: 1em;
+width: 100%;
+padding: 0.5em 0.7em;}
+/**
+    single product page
+**/
+
+/*hack to disable woocommerce layout, and use foundation grid system*/
+.woocommerce-page #content div.product div.images.columns,
+.woocommerce-page div.product div.images.columns,
+.woocommerce-page #content div.product div.images.columns,
+.woocommerce-page div.product div.images.columns
+{width:39%;}
+
+.woocommerce-page #content div.product div.summary.columns,
+.woocommerce-page div.product div.summary.columns,
+.woocommerce-page #content div.product div.summary.columns,
+.woocommerce-page div.product div.summary.columns{width:60%;}
+
+.woocommerce-page.single-product .product .images,
+.woocommerce-page.single-product .product .entry-summary,
+.woocommerce-page.single-product .product .woocommerce-tabs{
+
+}
+.woocommerce-page.single-product .product .alert-box .label{  margin-bottom: 0;}
+.woocommerce div.product .woocommerce-tabs .panel.entry-content{
+    padding: 20px;
+}
+.woocommerce-page a.single_add_to_cart_button.button.alt{    background-color: #942828;   }
+.woocommerce-page a.single_add_to_cart_button.button.alt:hover{    background-color: #003AAD;   }
+
+
+
+                                       /*  custom list icons using WP-dashicons in tabs*/
+.woocommerce-page .product .woocommerce-tabs .panel.content-entry{padding: 1.5em;}
+.woocommerce-page .product .woocommerce-tabs .entry-content li, .woocommerce-page .product .summary.entry-summary li{list-style: none;}
+.woocommerce-page .product .woocommerce-tabs .entry-content li:before,.woocommerce-page .product .summary.entry-summary li:before{
+    content: "\f147";
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 18px/1 'dashicons';
+    color: darkgreen;
+    margin-right: 10px;
+    word-wrap: break-word;
+
+}
+.woocommerce-page .product .woocommerce-tabs{
+     clear: none;
+}
+footer > .site-info{text-align: right;}
+
+/*kontakt page*/
+/*map*/
+#wpgmza_map{margin-left: 0!important; width: 100%!important;}
+/*  adminbar    */
+#wpadminbar{position: absolute; top: -32px;}
+
+/* =Media Queries
+----------------------------------------------- */
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+	}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+	}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+	}
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+	}
+@media only screen and (min-width: 120.063em) { /* min-width 1921px, xlarge screens */
+	}
